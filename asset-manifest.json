@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/chiringuitocaracola/static/css/main.41f5a531.css",
-    "main.js": "/chiringuitocaracola/static/js/main.ddecdd60.js",
+    "main.js": "/chiringuitocaracola/static/js/main.aaa531fe.js",
     "static/js/787.71068ff6.chunk.js": "/chiringuitocaracola/static/js/787.71068ff6.chunk.js",
     "static/media/pdf.worker.js": "/chiringuitocaracola/static/media/pdf.worker.5a4781656f64092ca08b.js",
     "static/media/portrait.jpg": "/chiringuitocaracola/static/media/portrait.b6cfea49ad84e180fcb2.jpg",
     "static/media/logonegre.png": "/chiringuitocaracola/static/media/logonegre.4e249ad1dd98bc216707.png",
     "index.html": "/chiringuitocaracola/index.html",
     "main.41f5a531.css.map": "/chiringuitocaracola/static/css/main.41f5a531.css.map",
-    "main.ddecdd60.js.map": "/chiringuitocaracola/static/js/main.ddecdd60.js.map",
+    "main.aaa531fe.js.map": "/chiringuitocaracola/static/js/main.aaa531fe.js.map",
     "787.71068ff6.chunk.js.map": "/chiringuitocaracola/static/js/787.71068ff6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41f5a531.css",
-    "static/js/main.ddecdd60.js"
+    "static/js/main.aaa531fe.js"
   ]
 }
