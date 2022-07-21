@@ -38,7 +38,7 @@ const Comidas: FC<ComidasProps> = ({}) => {
 
   return (
     <Container sx={{ textAlign: "center" }}>
-      <Link href="/menu.pdf" target="_blank">
+      <Link href="/menu2.pdf" target="_blank">
         <Box height={"100vh"}>
           <Box
             sx={{
