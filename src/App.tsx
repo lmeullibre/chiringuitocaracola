@@ -14,12 +14,12 @@ const clientSideEmotionCache = createEmotionCache();
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Page></Page>}/>
           <Route path="comidas" element={<Comidas></Comidas>}/>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
