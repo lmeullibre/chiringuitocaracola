@@ -73,7 +73,7 @@ const Page: FC<PageProps> = ({}) => {
         </Hidden>
         <Grid container spacing={2} mt={2} mb={2}>
           <Grid item sm={12} md={6} xs={12} lg={6}>
-            <Link href="/#/comidas">
+            <Link href="/comidas">
               <Box height="20rem">
                 <Box
                   sx={{
