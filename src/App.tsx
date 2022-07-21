@@ -16,7 +16,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>
-          <Route path="/comidas" element={<Comidas></Comidas>}/>
+          <Route path="/" element={<Page></Page>}/>
+          <Route path="comidas" element={<Comidas></Comidas>}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
