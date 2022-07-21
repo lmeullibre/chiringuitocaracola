@@ -12,8 +12,6 @@ import {
 import makeStyles from "@mui/styles/makeStyles";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 
-import { Instagram as InstagramIcon } from "react-feather";
-
 interface PageProps {}
 const { mouseControl } = require("./basic.css");
 
@@ -183,7 +181,6 @@ const Page: FC<PageProps> = ({}) => {
                   style={{ textDecoration: "none" }}
                 >
                   <Stack direction="row" alignItems="center" gap={1}>
-                    <InstagramIcon className={classes.instagram} />
                     <Typography variant={"h5"} color="textSecondary">
                       chiringuitocaracola
                     </Typography>
