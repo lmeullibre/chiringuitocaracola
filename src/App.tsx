@@ -7,19 +7,19 @@ import { ThemeProvider } from "@mui/material/";
 import { CssBaseline, Typography } from "@mui/material";
 import Page from "./Page";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import Comidas from "./Comidas";
 
 const clientSideEmotionCache = createEmotionCache();
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="/chiringuitocaracola" element={<Page></Page>}/>
-          <Route path="/chiringuitocaracola/comidas" element={<Comidas></Comidas>}/>
+          <Route path="/" element={<Page></Page>}/>
+          <Route path="/comidas" element={<Comidas></Comidas>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
