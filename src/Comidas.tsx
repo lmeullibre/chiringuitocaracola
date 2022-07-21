@@ -12,6 +12,9 @@ import {
 import makeStyles from "@mui/styles/makeStyles";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 
+import {
+  Download as DownloadIcon
+} from "react-feather";
 
 import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack5";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -48,7 +51,15 @@ const Comidas: FC<ComidasProps> = ({}) => {
               transform: "translateY(-50%)",
             }}
           >
-    
+            <DownloadIcon
+              size={120}
+              style={{
+                color: "white",
+                position: "relative",
+                top: "50%",
+                transform: "translateY(-75%)",
+              }}
+            ></DownloadIcon>
 
             <Typography
               variant={"h4"}
