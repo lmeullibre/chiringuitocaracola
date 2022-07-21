@@ -18,6 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Page></Page>}/>
           <Route path="comidas" element={<Comidas></Comidas>}/>
+          <Route path="*" element={<Comidas />}>
+          </Route>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
