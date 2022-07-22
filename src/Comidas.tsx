@@ -13,7 +13,8 @@ import makeStyles from "@mui/styles/makeStyles";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 
 import {
-  Download as DownloadIcon
+  Instagram as InstagramIcon,
+  Download as DownloadIcon,
 } from "react-feather";
 
 import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack5";
@@ -37,7 +38,7 @@ const Comidas: FC<ComidasProps> = ({}) => {
 
   return (
     <Container sx={{ textAlign: "center" }}>
-      <Link href="/menu2.pdf" target="_blank">
+      <Link href="/menu.pdf" target="_blank">
         <Box height={"100vh"}>
           <Box
             sx={{
