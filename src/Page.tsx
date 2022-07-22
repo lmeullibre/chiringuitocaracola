@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import makeStyles from "@mui/styles/makeStyles";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import { Instagram as InstagramIcon } from "react-feather";
 
 interface PageProps {}
 const { mouseControl } = require("./basic.css");
@@ -18,7 +19,7 @@ const { mouseControl } = require("./basic.css");
 const useStyles = makeStyles((theme: any) => ({
   root: {},
   image: {
-    maxWidth: "30%",
+    maxWidth: "50%",
     height: "auto",
   },
   imageBig: {
@@ -31,6 +32,10 @@ const useStyles = makeStyles((theme: any) => ({
   },
   instagram: {
     color: theme.palette.text.secondary,
+  },
+  burger: {
+    height: "20rem",
+    width: "20rem",
   },
 }));
 
@@ -46,7 +51,7 @@ const Page: FC<PageProps> = ({}) => {
           <Box>
             <Box>
               <img
-                src={require("./logonegre.png")}
+                src={require("./logo.png")}
                 className={classes.imageBig}
               ></img>
             </Box>
@@ -56,10 +61,7 @@ const Page: FC<PageProps> = ({}) => {
         <Hidden mdDown>
           <Box>
             <Box>
-              <img
-                src={require("./logonegre.png")}
-                className={classes.image}
-              ></img>
+              <img src={require("./logo.png")} className={classes.image}></img>
             </Box>
             <Box>
               <img
@@ -84,7 +86,14 @@ const Page: FC<PageProps> = ({}) => {
                     top: "50%",
                     transform: "translateY(-50%)",
                   }}
-                ></Box>
+                >
+                  <Box>
+                    <img
+                      className={classes.burger}
+                      src={require("./burger.png")}
+                    ></img>
+                  </Box>
+                </Box>
               </Box>
             </Link>
           </Grid>
@@ -101,7 +110,14 @@ const Page: FC<PageProps> = ({}) => {
                   top: "50%",
                   transform: "translateY(-50%)",
                 }}
-              ></Box>
+              >
+                <Box>
+                  <img
+                    className={classes.burger}
+                    src={require("./wine.png")}
+                  ></img>
+                </Box>
+              </Box>
             </Box>
           </Grid>
         </Grid>
@@ -128,8 +144,8 @@ const Page: FC<PageProps> = ({}) => {
           <Grid item md={6} sx={{ width: "100%" }}>
             <Box>
               <MapContainer
-                center={{ lat: 51.505, lng: -0.09 }}
-                zoom={13}
+                center={{ lat: 41.236111, lng: 1.814321 }}
+                zoom={40}
                 scrollWheelZoom={false}
               >
                 <TileLayer
@@ -148,10 +164,10 @@ const Page: FC<PageProps> = ({}) => {
                 </Typography>
                 <Box gap={1} display="flex" flexDirection="column">
                   <Typography variant={"h5"} color="textSecondary">
-                    77218 Herta Highway
+                  Playa de Sant Sebastia
                   </Typography>
                   <Typography variant={"h5"} color="textSecondary">
-                    Suite 984
+                    Sitges
                   </Typography>
                 </Box>
               </Box>
@@ -181,6 +197,7 @@ const Page: FC<PageProps> = ({}) => {
                   style={{ textDecoration: "none" }}
                 >
                   <Stack direction="row" alignItems="center" gap={1}>
+                    <InstagramIcon className={classes.instagram} />
                     <Typography variant={"h5"} color="textSecondary">
                       chiringuitocaracola
                     </Typography>
