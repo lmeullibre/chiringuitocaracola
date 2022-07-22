@@ -192,7 +192,7 @@ const Page: FC<PageProps> = ({}) => {
                     Horario
                   </Typography>
                   <Typography variant={"h5"} color="textSecondary">
-                    9.00 a 21.00
+                    9:00 a 22:00
                   </Typography>
                 </Box>
               </Grid>
