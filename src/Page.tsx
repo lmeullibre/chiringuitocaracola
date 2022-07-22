@@ -39,6 +39,13 @@ const useStyles = makeStyles((theme: any) => ({
     position: "relative",
     transform: "translateY(50%)",
   },
+  wine: {
+    height: '10rem',
+    width: "6rem",
+    display: "inline-block",
+    position: "relative",
+    transform: "translateY(50%)",
+  },
 }));
 
 const Page: FC<PageProps> = ({}) => {
@@ -119,7 +126,7 @@ const Page: FC<PageProps> = ({}) => {
                 >
                   <Box>
                     <img
-                      className={classes.burger}
+                      className={classes.wine}
                       src={require("./wine.png")}
                     ></img>
                   </Box>
