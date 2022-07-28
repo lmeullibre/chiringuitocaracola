@@ -2,19 +2,27 @@ import React, { useEffect, useState } from "react";
 import type { FC, ChangeEvent } from "react";
 import {
   Box,
+  Card,
+  CardMedia,
   Container,
   Grid,
   Hidden,
+  IconButton,
   Link,
+  Paper,
   Stack,
+  SvgIcon,
   Typography,
 } from "@mui/material";
 import makeStyles from "@mui/styles/makeStyles";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import { useNavigate } from "react-router-dom";
+import { Animation } from "react-animate-style";
 
 import {
   Instagram as InstagramIcon,
   Download as DownloadIcon,
+  ArrowLeft as ArrowLeft,
 } from "react-feather";
 
 import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack5";
@@ -31,6 +39,7 @@ const Comidas: FC<ComidasProps> = ({}) => {
   const classes = useStyles();
   const [file, setFile] = useState("./menu.pdf");
   const [numPages, setNumPages] = useState(null);
+  const navigate = useNavigate();
   const [pageNumber] = useState(1);
   const onDocumentLoadSuccess = ({ numPages }: any) => {
     setNumPages(numPages);
@@ -38,44 +47,17 @@ const Comidas: FC<ComidasProps> = ({}) => {
 
   return (
     <Container sx={{ textAlign: "center" }}>
-      <Link href="/menu.pdf" target="_blank">
-        <Box height={"100vh"}>
-          <Box
-            sx={{
-              height: "20rem",
-              width: "20rem",
-              backgroundColor: "#AD8344",
-              borderRadius: "50%",
-              display: "inline-block",
-              position: "relative",
-              top: "50%",
-              transform: "translateY(-50%)",
-            }}
-          >
-            <DownloadIcon
-              size={120}
-              style={{
-                color: "white",
-                position: "relative",
-                top: "50%",
-                transform: "translateY(-75%)",
-              }}
-            ></DownloadIcon>
-
-            <Typography
-              variant={"h4"}
-              sx={{
-                color: "white",
-                position: "relative",
-                top: "50%",
-                transform: "translateY(-200%)",
-              }}
-            >
-              Descargar carta
-            </Typography>
-          </Box>
-        </Box>
-      </Link>
+      <Box display="flex" flexDirection="column">
+        <IconButton onClick={() => navigate("/")}>
+          <ArrowLeft></ArrowLeft>
+        </IconButton>
+          <Card sx={{ boxShadow: 20 }}>
+            <img
+              src={require("./carta.jpg")}
+              style={{ maxWidth: "100%" }}
+            ></img>
+          </Card>
+      </Box>
     </Container>
   );
 };
