@@ -17,7 +17,6 @@ import {
 import makeStyles from "@mui/styles/makeStyles";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import { useNavigate } from "react-router-dom";
-import { Animation } from "react-animate-style";
 
 import {
   Instagram as InstagramIcon,
