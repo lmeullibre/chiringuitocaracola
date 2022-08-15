@@ -225,7 +225,7 @@ const Page: FC<PageProps> = ({}) => {
       </Container>
       <Box textAlign="center">
         <Stack>
-          <Typography sx={{ fontSize: "0.5em" }} color="textSecondary">
+          <Typography sx={{ fontSize: "0.7rem" }} color="textSecondary">
             Powered by sergimartinezrodriguez@gmail.com
           </Typography>
         </Stack>
