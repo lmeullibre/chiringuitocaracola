@@ -52,7 +52,7 @@ const Comidas: FC<ComidasProps> = ({}) => {
         </IconButton>
           <Card sx={{ boxShadow: 20 }}>
             <img
-              src={require("./carta.jpg")}
+              src={require("./menu.jpg")}
               style={{ maxWidth: "100%" }}
             ></img>
           </Card>
